@@ -4,6 +4,8 @@ from datetime import datetime, timedelta
 import allure
 import pytest
 
+pytestmark = pytest.mark.api
+
 from pages.schedule_api import TZ, ts
 
 

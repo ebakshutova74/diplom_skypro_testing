@@ -4,6 +4,8 @@ import allure
 import pytest
 from selenium.webdriver.support.wait import WebDriverWait
 
+pytestmark = pytest.mark.ui
+
 from config import LOGIN_URL
 from pages.login_page import LoginPage
 

@@ -6,6 +6,8 @@ import allure
 import pytest
 import requests
 
+pytestmark = pytest.mark.api
+
 from config import SESSION, TOKEN
 
 log = logging.getLogger(__name__)

@@ -1,6 +1,8 @@
 import allure
 import pytest
 
+pytestmark = pytest.mark.ui
+
 from config import UI_URL
 from pages.calendar_page import CalendarPage
 from pages.schedule_api import ts
