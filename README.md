@@ -39,6 +39,7 @@
 ## Установка
 
     pip install -r requirements.txt
+    ── pytest.ini                  # конфигурация и маркеры pytest (ui, api)
 
 В `config.py` указывается персональное значение куки `token_global` действующей
 сессии личного кабинета преподавателя — значение берётся из браузера после
@@ -46,7 +47,9 @@
 
 ## Запуск тестов
 
-    py -m pytest tests -q
+    pytest                  # запуск всех тестов (API + UI)
+    pytest -m "api"         # запуск только API-тестов (requests)
+    pytest -m "ui"          # запуск только UI-тестов (Selenium)
 
 Отдельные наборы:
 
